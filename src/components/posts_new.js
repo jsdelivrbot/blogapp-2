@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { reduxForm } from 'redux-form';
+import { createPost } from '../actions/index';
 
 class PostsNew extends Component
 {
@@ -33,6 +34,10 @@ class PostsNew extends Component
     )
   }
 }
+
+
+// connect: 1st is mapStateToProps, 2nd is mapDispatchToProps
+// reduxForm: 1st is config object, 2nd is mapStateToProps, 3rd is mapDispatchToProps
 
 export default reduxForm(
   {
